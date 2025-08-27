@@ -1,0 +1,196 @@
+
+
+/* 변수선언하기 */
+:root {
+  --default:#092729;
+  --title-size:60px;
+  --title-family:"Jost","sans-serif"
+}
+
+.inner {
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+body {
+
+}
+
+.ham-btn {
+  display: none;
+}
+
+header {
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0 , 0 , 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+
+  .inner {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    line-height: 76px;
+    ul {
+      display: flex;
+      &.main-menu {
+        gap: 68px;
+        li a {
+          font-family: var(--title-family);
+          color: var(--default);
+          font-size: 1.13rem;
+          font-weight: 500;
+        }
+      }
+      &.gnb {
+        gap: 32px;
+      }
+    }
+  }
+}
+
+main {
+  .main-slider-wrap {
+    .slider img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  section {
+    padding: 180px 0 0;
+
+    .inner {
+      position: relative;
+    }
+
+    .title {
+      font-family: var(--title-family);
+      font-size: var(--title-size);
+      margin-bottom: 30px;
+    }
+
+    .magazine-list {
+      display: flex;
+      gap: 40px;
+
+      li {
+        width: 25%;
+        border-radius: 30px;
+        overflow: hidden;
+
+        &:first-child {
+          height: 500px;
+        }
+
+        &:nth-child(2){
+          height: 400px;
+        }
+
+        &:last-child {
+          height: 500px;
+        }
+        a {
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+
+    .more-btn {
+      position: absolute;
+      right: 40px;
+      top: 0;
+
+    }
+  }
+}
+
+footer {
+  background: var(--default);
+  color: #fff;
+  .inner {
+    padding: 94px;
+    max-width: 1670px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    
+
+
+    .footer-left{
+      .text-op {
+        opacity: 0.7;
+      }
+
+      .util-address {
+        margin-top: 40px;
+
+        .util-menu {
+          display: flex;
+          gap: 10px;
+          font-size: 1.13rem;
+          font-weight: 500;
+          margin-bottom: 15px;
+
+          li a {
+            color: #fff;
+          }
+        }
+
+        address {
+          font-size: 0.88rem;
+          font-weight: 500;
+          margin-bottom: 15px;
+          line-height: 20px;
+        }
+      }
+
+      .custom-center {
+        p {
+          font-size: 1.13rem;
+
+          strong {
+            font-size: 1.5rem;
+            font-weight: 500;
+          }
+        }
+
+      }
+
+      .copy {
+        font-size: 0.88rem;
+        font-weight: 300;
+        margin-top: 24px;
+      }
+
+    }
+
+    .footer-right {
+      text-align: end;
+
+      .sns-list {
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+        margin-bottom: 30px;
+      }
+
+      .footer-menu {
+        font-size: 1.1rem;
+        line-height: 2;
+
+        li a {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
