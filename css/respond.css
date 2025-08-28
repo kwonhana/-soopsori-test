@@ -1,5 +1,5 @@
 /* 1280 이하 */
-@media screen and (max-width:1280px) {
+@media screen and (max-width: 1280px) {
   .main-menu {
     gap: 3rem;
   }
@@ -25,7 +25,7 @@
   }
 
   header .inner .main-menu {
-    display: none ;
+    display: none;
   }
 
   .ham-btn {
@@ -34,7 +34,7 @@
 
   footer .inner {
     display: block;
-    padding: 3rem 20px ;
+    padding: 3rem 20px;
 
     .footer-right {
       margin-top: 1.5rem;
@@ -42,11 +42,12 @@
 
       .sns-list {
         justify-content: flex-start;
-      
-      .footer-menu {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
+
+        .footer-menu {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
       }
     }
   }
